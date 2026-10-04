@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Po pracy na ryby – zawody wędkarskie spinningowe pod Toruniem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Po pracy na ryby – zawody wędkarskie spinningowe pod Toruniem. Zrelaksuj się po pracy, poznaj innych pasjonatów wędkarstwa i powalcz o profesjonalny sprzęt oraz puchar zawodów.">
+
+    <!-- Ładowanie fontu z Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- GŁÓWNA NAWIGACJA / HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Logo tekstowe -->
+            <div class="logo">
+                <!-- Możesz później podmienić na obrazek <img src="img/logo.png" alt="Po pracy na ryby"> -->
+                <span class="logo-icon"></span>
+                <span class="logo-text">Po pracy na ryby</span>
+            </div>
+
+            <nav class="main-nav" aria-label="Główna nawigacja">
+                <ul>
+                    <li><a href="#o-wydarzeniu">O wydarzeniu</a></li>
+                    <li><a href="#nagrody">Nagrody</a></li>
+                    <li><a href="#cennik">Cennik</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#opinie">Opinie</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <!-- Prosty hamburger dla mobile -->
+            <button class="nav-toggle" aria-label="Otwórz/zamknij menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SEKCJA HERO -->
+    <section class="hero" id="top">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <!-- H1 - główny nagłówek -->
+            <h1>Złap chwilę spokoju po pracy – weź udział w zawodach spinningowych</h1>
+            <p>Dołącz do „Po pracy na ryby” – kameralnych zawodów wędkarskich spinningowych pod Toruniem. Zrelaksuj się nad jeziorem, poznaj innych pasjonatów i powalcz o profesjonalny sprzęt oraz puchar zawodów.</p>
+            <a href="#kontakt" class="btn btn-primary">Zapisz się na zawody</a>
+
+            <!-- Licznik odliczający do wydarzenia -->
+            <div class="countdown-wrapper" aria-label="Odliczanie do rozpoczęcia zawodów">
+                <h2>Do startu zawodów pozostało:</h2>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label">dni</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label">godzin</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-label">minut</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-label">sekund</span>
+                    </div>
+                </div>
+                <p class="countdown-message" id="countdown-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA O WYDARZENIU -->
+    <section class="section" id="o-wydarzeniu">
+        <div class="container">
+            <h2>O wydarzeniu „Po pracy na ryby”</h2>
+            <p>
+                „Po pracy na ryby” to wyjątkowe zawody wędkarskie spinningowe dla osób, które po dniu pełnym obowiązków chcą złapać oddech nad wodą.
+                Spotykamy się nad malowniczym jeziorem niedaleko Torunia, żeby wspólnie odpocząć, powędkować i wymienić się doświadczeniami.
+            </p>
+            <p>
+                Niezależnie od tego, czy łowisz od lat, czy dopiero zaczynasz przygodę ze spinningiem – znajdziesz tu przyjazną atmosferę,
+                nowe znajomości i dawkę zdrowej, sportowej rywalizacji.
+            </p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Relaks po pracy</h3>
+                    <p>Oderwij się od biurka, miejskich korków i codziennego stresu. Zamiast ekranu komputera – zachód słońca nad wodą.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Nowe znajomości</h3>
+                    <p>Poznaj innych pasjonatów wędkarstwa, wymień się tipami, zainspiruj nowymi technikami i przynętami.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Wymiana doświadczeń</h3>
+                    <p>Porozmawiaj z bardziej doświadczonymi wędkarzami, podpatrz ich patenty i modernizuj swój styl łowienia.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Kameralna atmosfera</h3>
+                    <p>Ograniczona liczba miejsc sprawia, że na zawodach panuje swobodna atmosfera i każdy czuje się częścią ekipy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA JAK TO DZIAŁA -->
+    <section class="section section-alt" id="jak-to-dziala">
+        <div class="container">
+            <h2>Jak wyglądają zawody?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>Rejestracja online</h3>
+                    <p>Wypełnij krótki formularz zgłoszeniowy, a my odezwiemy się do Ciebie z potwierdzeniem udziału i szczegółami dojazdu.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>Spotkanie nad jeziorem</h3>
+                    <p>W wyznaczonym dniu widzimy się na miejscu startu. Krótkie omówienie zasad, losowanie stanowisk i przygotowanie sprzętu.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Zawody i ważenie ryb</h3>
+                    <p>Łowimy zgodnie z regulaminem. Po zakończeniu sędziowie ważą złowione ryby i wyłaniają zwycięzców.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">4</span>
+                    <h3>Puchar i integracja</h3>
+                    <p>Wręczamy nagrody, puchar i zapraszamy na wspólną integrację przy posiłku oraz ognisku.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA NAGRODY -->
+    <section class="section" id="nagrody">
+        <div class="container">
+            <h2>Co możesz wygrać?</h2>
+            <div class="rewards-grid">
+                <div class="reward-card">
+                    <h3>Profesjonalny sprzęt wędkarski</h3>
+                    <p>Zwycięzcy otrzymują wysokiej klasy wędki, kołowrotki i akcesoria spinningowe, idealne na kolejne wyprawy.</p>
+                </div>
+                <div class="reward-card">
+                    <h3>Puchar „Po pracy na ryby”</h3>
+                    <p>Okazały puchar zawodów, który możesz dumnie postawić na półce i przypominać sobie emocje z łowiska.</p>
+                </div>
+                <div class="reward-card">
+                    <h3>Uznanie wśród wędkarzy</h3>
+                    <p>Tytuł zwycięzcy edycji to coś więcej niż nagroda – to respekt i uznanie w społeczności pasjonatów wędkarstwa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA CENNIK -->
+    <section class="section section-alt" id="cennik">
+        <div class="container">
+            <h2>Cennik uczestnictwa</h2>
+            <div class="pricing-card">
+                <h3>Pakiet standard</h3>
+                <p class="price">
+                    <!-- Możesz zmienić wysokość opłaty według potrzeb -->
+                    199 zł <span>/ osoba</span>
+                </p>
+                <ul>
+                    <li>Udział w zawodach spinningowych</li>
+                    <li>Ciepły posiłek po zawodach</li>
+                    <li>Napoje (kawa, herbata, woda)</li>
+                    <li>Grill / ognisko integracyjne</li>
+                    <li>Drobny serwis sprzętowy na miejscu (regulacja zestawów, porady ekspertów)</li>
+                </ul>
+                <p class="pricing-note">Liczba miejsc jest ograniczona – decyduje kolejność zgłoszeń.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA GALERIA + ODLICZANIE (odliczanie już w HERO, tu głównie zdjęcia) -->
+    <section class="section" id="galeria">
+        <div class="container">
+            <h2>Galeria poprzednich edycji</h2>
+            <p>Zobacz, jak wygląda klimat naszych zawodów – woda, zachody słońca i uśmiechnięci wędkarze.</p>
+
+            <div class="gallery-grid">
+                <!-- Obrazy są placeholderami – podmień ścieżki na realne zdjęcia -->
+                <figure class="gallery-item">
+                    <img src="img/gallery1.jpg" alt="Wędkarze nad jeziorem o zachodzie słońca">
+                    <figcaption>Wieczorne łowienie w spokojnej, kameralnej atmosferze.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="img/gallery2.jpg" alt="Zwycięzca zawodów z pucharem">
+                    <figcaption>Uśmiech zwycięzcy i puchar „Po pracy na ryby”.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="img/gallery3.jpg" alt="Wędkarze przygotowujący sprzęt nad brzegiem jeziora">
+                    <figcaption>Przygotowania do startu – wymiana doświadczeń i porad sprzętowych.</figcaption>
+                </figure>
+            </div>
+            <p class="gallery-note">* Podane zdjęcia są przykładowe – podmień je na fotografie z Twojego wydarzenia.</p>
+        </div>
+    </section>
+
+    <!-- SEKCJA OPINIE -->
+    <section class="section section-alt" id="opinie">
+        <div class="container">
+            <h2>Co mówią uczestnicy?</h2>
+            <div class="testimonials-grid">
+                <article class="testimonial">
+                    <p>„Świetny sposób, żeby oderwać się od pracy za biurkiem. Spokojna atmosfera, fajni ludzie i solidna dawka emocji przy holowaniu ryb.”</p>
+                    <p class="testimonial-meta">
+                        <span class="testimonial-name">Marek</span>,
+                        <span class="testimonial-role">specjalista IT i wędkarz amator</span>,
+                        <span class="testimonial-company">TechSoft</span>
+                    </p>
+                </article>
+                <article class="testimonial">
+                    <p>„Od lat łowię, ale dopiero tutaj poczułem, jak fajnie jest spotkać tylu pasjonatów w jednym miejscu. Organizacja na wysokim poziomie.”</p>
+                    <p class="testimonial-meta">
+                        <span class="testimonial-name">Andrzej</span>,
+                        <span class="testimonial-role">kierownik sprzedaży</span>,
+                        <span class="testimonial-company">HandelPlus</span>
+                    </p>
+                </article>
+                <article class="testimonial">
+                    <p>„Nie chodzi tylko o wyniki – zawody to pretekst, żeby spędzić czas nad wodą i złapać dystans do codziennych obowiązków.”</p>
+                    <p class="testimonial-meta">
+                        <span class="testimonial-name">Piotr</span>,
+                        <span class="testimonial-role">właściciel małej firmy</span>,
+                        <span class="testimonial-company">UsługiBud</span>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA KONTAKT / FORMULARZ -->
+    <section class="section" id="kontakt">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Zapisz się na zawody lub zadaj pytanie</h2>
+                <p>Wypełnij formularz, a skontaktujemy się z Tobą w sprawie szczegółów udziału, regulaminu i organizacji wyjazdu.</p>
+
+                <ul class="contact-list">
+                    <!-- Poniższe dane są przykładowe – podmień na swoje -->
+                    <li><strong>E-mail:</strong> <a href="mailto:kontakt@popracynaryby.pl">kontakt@popracynaryby.pl</a></li>
+                    <li><strong>Telefon:</strong> <a href="tel:+48000000000">+48 000 000 000</a></li>
+                    <li><strong>Lokalizacja:</strong> okolice Torunia, jezioro – dokładne miejsce w potwierdzeniu</li>
+                </ul>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Imię*</label>
+                        <input type="text" id="name" name="name" required>
+                        <small class="error-message" data-for="name"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required>
+                        <small class="error-message" data-for="email"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon*</label>
+                        <!-- W tym projekcie telefon jest wymagany -->
+                        <input type="tel" id="phone" name="phone" required>
+                        <small class="error-message" data-for="phone"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Wiadomość (np. pytanie o regulamin)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                        <small class="error-message" data-for="message"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Wyślij zgłoszenie</button>
+                    <p class="form-success-message" id="form-success-message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- STOPKA -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="current-year"></span> Po pracy na ryby. Wszelkie prawa zastrzeżone.</p>
+            <div class="footer-links">
+    <!-- Link do osobnej podstrony z regulaminem -->
+    <a href="regulamin.html">Regulamin</a>
+    <!-- Na razie zostawiamy placeholder dla polityki -->
+    <a href="#polityka-prywatnosci">Polityka prywatności</a>
+</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
